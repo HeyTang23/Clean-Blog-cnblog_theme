@@ -1,4 +1,46 @@
-  <!-- Navigation -->
+<link href="https://blog-static.cnblogs.com/files/D-arling/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom styles for this template -->
+<link href="https://blog-static.cnblogs.com/files/D-arling/clean-blog.min.css" rel="stylesheet">
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://blog-static.cnblogs.com/files/D-arling/jquery.min.js"></script>
+<script src="https://blog-static.cnblogs.com/files/D-arling/bootstrap.bundle.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="https://blog-static.cnblogs.com/files/D-arling/clean-blog.min.js"></script>
+
+<link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+
+<script>
+    document.getElementById("mainContent").id = 'content';
+    document.getElementById("content").setAttribute("class", "container");
+    var nickName = null;
+    var subheading = "世间每一次相遇，都是久别重逢";
+    var contact = "https://msg.cnblogs.com/send/D-arling";
+    var set_up = "https://i.cnblogs.com/settings";
+    var about = "https://www.cnblogs.com/D-arling/p/14711119.html";
+    document.getElementById("about").setAttribute("href", about);
+    document.getElementById("contact").setAttribute("href", contact);
+    document.getElementById("set_up").setAttribute("href", set_up);
+    if (nickName == null){
+            var footerOverTestArray = $($("#footer")[0].childNodes[2]).text().trim().split(" ");
+            nickName = footerOverTestArray[footerOverTestArray.length - 1];
+        }
+    if($("#cb_post_title_url").html()){
+            $("#mypost_title_h").html($("#cb_post_title_url").html());
+            $("#subheading").html("Posted@ "+$("#post-date").html());
+        }else{
+            $("#mypost_title_h").html(nickName);
+            $("#subheading").html(subheading);
+        }
+            $("#copyright").html("Copyright &copy;"+nickName+" 2020");
+    document.getElementById("nickName").setAttribute("class", "container");
+    
+</script>
+
+
+<!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="https://www.cnblogs.com/D-arling/default.html?page=1">咸鱼</a>
