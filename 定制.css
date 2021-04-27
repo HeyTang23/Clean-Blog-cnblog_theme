@@ -1,3 +1,11 @@
+@media screen and (max-width: 768px) {
+    .forFlow {
+        width: 100% !important;
+    }
+    .postTitle span{
+        font-size: 20px !important;
+    }
+}
 #top_nav,#header,#gtx-trans,#sideBar,#homepage_top_pager,#footer,#under_post_card1,#under_post_card2{
     display: none;
 }
@@ -12,7 +20,7 @@
 }
 .forFlow {
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto !important;
     margin-bottom: 0px;
 }
 .dayTitle{
