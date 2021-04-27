@@ -23,6 +23,10 @@
     document.getElementById("about").setAttribute("href", about);
     document.getElementById("contact").setAttribute("href", contact);
     document.getElementById("set_up").setAttribute("href", set_up);
+    if ($("#cnblogs_post_body p img").eq(0).attr("src")){
+        console.log(1);
+        $("#masthead").attr("style", "background-image: url("+$("#cnblogs_post_body p img").eq(0).attr("src")+")")
+    }
     if (nickName == null){
             var footerOverTestArray = $($("#footer")[0].childNodes[2]).text().trim().split(" ");
             nickName = footerOverTestArray[footerOverTestArray.length - 1];
@@ -34,9 +38,8 @@
             $("#mypost_title_h").html(nickName);
             $("#subheading").html(subheading);
         }
-            $("#copyright").html("Copyright &copy;"+nickName+" 2020");
-    document.getElementById("nickName").setAttribute("class", "container");
-    
+       $("#copyright").html("Copyright &copy;"+nickName+" 2020");
+
 </script>
 
 
@@ -68,7 +71,7 @@
   </nav>
 
   <!-- Page Header -->
-  <header class="masthead" style="background-image: url('https://img2020.cnblogs.com/blog/1821402/202104/1821402-20210427195846163-720244503.jpg')">
+  <header id="masthead" class="masthead" style="background-image: url('https://img2020.cnblogs.com/blog/1821402/202104/1821402-20210427195846163-720244503.jpg')">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
