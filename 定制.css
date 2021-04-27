@@ -1,0 +1,64 @@
+#top_nav,#header,#gtx-trans,#sideBar,#homepage_top_pager,#footer,#under_post_card1,#under_post_card2{
+    display: none;
+}
+#main{
+    background-color:#f5f5f500;
+}
+.postTitle span{
+    font-size: 36px;
+}
+.topicListFooter {
+    padding: 1px;
+}
+.forFlow {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+}
+.dayTitle{
+border: none;
+width: 110px;
+}
+*{
+    font-weight: 800;
+}
+.comment_textarea{
+    width: 100%;
+}
+#btn_comment_submit{
+    width: 160px;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 3px;
+    background: #1E90FF;
+    cursor: pointer;
+    outline: none;
+    font-family: Microsoft YaHei;
+    color: white;
+}
+.forFlow img {
+    margin-top: -3px;
+}
+#green_channel{
+    border: none;
+    width: 100%;
+}
+#cnblogs_post_body{
+    margin-bottom: 0px;
+}
+
+header.masthead .post-heading .meta{
+    font-family: Lora,'Times New Roman',serif;
+}
+#subheading{
+    font-style: italic;
+}
+.pager a{
+    border-width: 0px;
+    border-radius: 3px;
+    background: #1E90FF;
+    color: white;
+}
+#div_digg{
+    margin-right: 0px
+}
