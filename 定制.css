@@ -17,6 +17,9 @@
     #cnblogs_post_body img {
         max-width: 100% !important;
     }
+    .commentform {
+        margin-left: 0 !important;
+    }
 }
 #top_nav,#header,#gtx-trans,#sideBar,#homepage_top_pager,#footer,#under_post_card1,#under_post_card2{
     display: none;
@@ -45,6 +48,9 @@
 border: none;
 width: 110px;
 }
+.day{
+    padding: 5px;
+}
 *{
     font-weight: 800;
 }
@@ -72,7 +78,9 @@ width: 110px;
 #cnblogs_post_body{
     margin-bottom: 0px;
 }
-
+#blog-comments-placeholder, #divRefreshComments, .commentform, #AjaxHolder_UpdatePanel1{
+    padding: 0;
+}
 header.masthead .post-heading .meta{
     font-family: Lora,'Times New Roman',serif;
 }
@@ -80,11 +88,41 @@ header.masthead .post-heading .meta{
     font-style: italic;
 }
 .pager a{
-    border-width: 0px;
-    border-radius: 3px;
-    background: #1E90FF;
-    color: white;
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #0085a1;
+    color: #fff;
 }
 #div_digg{
     margin-right: 0px
+}
+.fa, .fas {
+    color: #5f5a5a;
+}
+.comment_preview {
+    min-height: 305px;
+}
+.commentbox_tab{
+    line-height: 33px;
+}
+
+#nav_next_page a{
+    font-size: 14px;
+    font-weight: 800;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 0;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #0085a1;
+    color: #fff;
+}
+#nav_next_page a:hover{
+    background-color: #00657b;
+    text-decoration: none !important;
 }
