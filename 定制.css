@@ -8,12 +8,24 @@
     .masthead{
         width: 100%;
     }
+    #subheading{
+        font-size: 16px;
+    }
+    header.masthead .page-heading, header.masthead .post-heading, header.masthead .site-heading{
+        padding: 125px 0 125px;
+    }
+    #cnblogs_post_body img {
+        max-width: 100% !important;
+    }
 }
 #top_nav,#header,#gtx-trans,#sideBar,#homepage_top_pager,#footer,#under_post_card1,#under_post_card2{
     display: none;
 }
 #navigator, #blogTitle, #main, #footer {
     width: 100%;
+}
+.post {
+    padding: 0px;
 }
 #main{
     background-color:#f5f5f500;
