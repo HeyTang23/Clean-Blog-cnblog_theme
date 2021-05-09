@@ -11,6 +11,8 @@
 <script src="https://blog-static.cnblogs.com/files/D-arling/clean-blog.min.js"></script>
 
 <link href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 
 <script>
     document.getElementById("mainContent").id = 'content';
@@ -28,6 +30,7 @@
     document.getElementById("home").setAttribute("href", home);
     document.getElementById("index").setAttribute("href", home);
     document.getElementById("github").setAttribute("href", github);
+
     if ($("#cnblogs_post_body p img").eq(0).attr("src")){
         console.log(1);
         $("#masthead").attr("style", "background-image: url("+$("#cnblogs_post_body p img").eq(0).attr("src")+")")
@@ -43,7 +46,7 @@
             $("#mypost_title_h").html(nickName);
             $("#subheading").html(subheading);
         }
-       $("#copyright").html("Copyright &copy;"+nickName+" 2020");
+       $("#copyright").html("Copyright &copy;"+nickName+" 2021");
 
 </script>
 
@@ -83,7 +86,7 @@
       <div class="row">
         <div class="col-lg-9 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1 id="mypost_title_h">Clean Blog</h1>
+            <h1 id="mypost_title_h"></h1>
             <span id='jinrishici-sentence'></span>
             <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
             <span id="subheading" class="meta subheading"></span>
