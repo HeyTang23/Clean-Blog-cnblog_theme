@@ -21,7 +21,7 @@
         margin-left: 0 !important;
     }
 }
-#top_nav,#header,#gtx-trans,#sideBar,#homepage_top_pager,#footer,#under_post_card1,#under_post_card2{
+#top_nav,#header,#gtx-trans,#sideBar,#homepage_top_pager,#footer,#under_post_card1,#under_post_card2,#ad_t2,#cnblogs_c1,#cnblogs_c2{
     display: none !important;
 }
 #navigator, #blogTitle, #main, #footer {
@@ -36,11 +36,14 @@
 .postTitle span{
     font-size: 36px;
 }
+body{
+background-image: none;
+}
 .topicListFooter {
     padding: 1px;
 }
 .forFlow {
-    width: 75%;
+    width: 70%;
     margin: 0 auto !important;
     margin-bottom: 0px;
 }
@@ -90,8 +93,21 @@ header.masthead .post-heading .meta{
 .pager a{
     border-width: 0px;
     border-radius: 3px;
-    background: #1E90FF;
-    color: white;
+/*    background: #1E90FF00; */
+    color: #adadad;
+}
+.pager {
+/*     background: #969595;*/
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    line-height: 200%;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+    border-radius: 3px;
+    margin-top: -20px;
+    margin-bottom: 14px;
 }
 #div_digg{
     margin-right: 0px
@@ -114,11 +130,11 @@ header.masthead .post-heading .meta{
     text-transform: uppercase;
     border-radius: 0;
     font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-    background-color: #0085a1;
+    background-color: #adadad;
     color: #fff;
 }
 #nav_next_page a:hover{
-    background-color: #00657b;
+    background-color: #8d8d8d;
     text-decoration: none !important;
 }
 .github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}
@@ -140,4 +156,14 @@ pre { color: #444; margin: 15px auto; padding: 20px 15px; border-left: 8px solid
 }
 .cnblogs_code :nth-child(3){ 
     display: none;
+}
+.topicListFooter{
+    margin-right: 5px;
+}
+.cnblogs-markdown code, .cnblogs-post-body code{
+    background-color: #ffffff00 !important;
+    border: none !important;
+}
+.postDesc, .postDesc2, .entrylistItemPostDesc{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
